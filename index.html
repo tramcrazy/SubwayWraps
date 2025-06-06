@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>wrap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         body {
             background: linear-gradient(45deg, #fff700, #3cff00);
             color: #222;
-            font-family: Comic Sans MS, cursive, sans-serif;
+            font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -33,6 +34,7 @@
             justify-content: center;
             gap: 30px;
             margin: 40px 0;
+            flex-wrap: wrap;
         }
         .wrap-pics img {
             width: 220px;
@@ -41,11 +43,47 @@
             border: 8px solid #b00;
             filter: grayscale(80%) blur(1px) brightness(0.8);
             box-shadow: 0 0 15px #b00;
+            margin-bottom: 20px;
         }
         .footer {
             margin-top: 40px;
             font-size: 1.2em;
             color: #b00;
+        }
+        @media (max-width: 800px) {
+            .reasons {
+                width: 90%;
+                font-size: 1.1em;
+            }
+            .wrap-pics {
+                gap: 10px;
+            }
+            .wrap-pics img {
+                width: 90vw;
+                max-width: 320px;
+                height: auto;
+            }
+            h1 {
+                font-size: 2.2em;
+                letter-spacing: 3px;
+            }
+        }
+        @media (max-width: 500px) {
+            .reasons {
+                width: 98%;
+                font-size: 1em;
+                padding: 10px;
+            }
+            .wrap-pics img {
+                width: 98vw;
+                max-width: 98vw;
+                height: auto;
+                border-width: 4px;
+            }
+            h1 {
+                font-size: 1.5em;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
